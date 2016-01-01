@@ -844,6 +844,8 @@ Scene_Menu.prototype.createCommandWindow = function() {
     }
 };
 
+// This is used to open up the Quest Log from the menu
+    // Used in conjunction with Yanfly's Menu plugin
 Scene_Menu.prototype.commandFriendship = function() {
     SceneManager.push(Scene_ActorsFriendship);
 };
