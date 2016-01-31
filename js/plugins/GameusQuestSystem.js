@@ -385,8 +385,63 @@ DataManager._databaseFiles.push(
         this.currentStep = 0;
         this.status = "progress";
     };
+	////////////////////////////////
     
-    Game_Quest.prototype.giveRewards = function() {
+	function Window_BattleResults() {
+        this.initialize.apply(this, arguments);
+    }
+	
+	Window_BattleResults.prototype = Object.create(Window_Base.prototype);
+    Window_BattleResults.prototype.constructor = Window_BattleResults;
+
+    Window_BattleResults.prototype.initialize = function() {
+        var rewards = BattleManager._rewards;
+        var width = 400;
+        var height = this.fittingHeight(Math.min(9, rewards.items.length + 1));
+        var statusHeight = this.fittingHeight(4);
+        var x = (Graphics.boxWidth - width) / 2;
+        var y = (Graphics.boxHeight - statusHeight - height) / 2;
+        Window_Base.prototype.initialize.call(this, x, y, width, height);
+        this.refresh();
+        this.openness = 0;
+        this.open();
+    };
+
+    Window_BattleResults.prototype.refresh = function() {
+        var x = this.textPadding();
+        var y = 0;
+        var width = this.contents.width;
+        var lineHeight = this.lineHeight();
+        var rewards = BattleManager._rewards;
+        var items = rewards.items;
+        this.contents.clear();
+
+        this.resetTextColor();
+        this.drawText(rewards.exp, x, y);
+        x += this.textWidth(rewards.exp) + 6;
+        this.changeTextColor(this.systemColor());
+        this.drawText(TextManager.expA, x, y);
+        x += this.textWidth(TextManager.expA + '  ');
+
+        this.resetTextColor();
+        this.drawText(rewards.gold, x, y);
+        x += this.textWidth(rewards.gold) + 6;
+        this.changeTextColor(this.systemColor());
+        this.drawText(TextManager.currencyUnit, x, y);
+
+        x = 0;
+        y += lineHeight;
+
+        items.forEach(function(item) {
+            this.drawItemName(item, x, y, width);
+            y += lineHeight;
+        }, this);
+    };
+	
+	///////////////////////////////
+	
+	
+    Game_Quest.prototype.giveRewards = function() {		
         for (var i = 0; i < this.rewards.length; i += 1) {
             var reward = this.rewards[i];
             switch (reward[0]) {
@@ -412,6 +467,8 @@ DataManager._databaseFiles.push(
                     break;
             }
         }
+		this._resultWindow = new Window_BattleResults();
+        this.addWindow(this._resultWindow);
     };
     
     Game_Quest.prototype.completed = function() {
