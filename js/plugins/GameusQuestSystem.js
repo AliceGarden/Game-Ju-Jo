@@ -387,33 +387,44 @@ DataManager._databaseFiles.push(
     };
 	////////////////////////////////
     
-	function Window_BattleResults() {
+	function Window_Rewards() {
         this.initialize.apply(this, arguments);
     }
 	
-	Window_BattleResults.prototype = Object.create(Window_Base.prototype);
-    Window_BattleResults.prototype.constructor = Window_BattleResults;
+	//Window_Rewards.prototype = Object.create(Window_Base.prototype);
+    //Window_Rewards.prototype.constructor = Window_Rewards;
 
-    Window_BattleResults.prototype.initialize = function() {
-        var rewards = BattleManager._rewards;
+    Window_Rewards.prototype.initialize = function(questId) {
+	
+		var questData = $dataQuests[questId];
+        this.questId = questId;
+        this.rawData = questData;        
+        this.rewards = questData.rewards;
+        this.icon = questData.icon;
+        this.steps = questData.steps;
+        this.maxSteps = this.steps.length;
+        this.currentStep = 0;
+        this.status = "progress";
+		//var questData = $dataQuests[questId];
+        //var reward = questData;		
         var width = 400;
-        var height = this.fittingHeight(Math.min(9, rewards.items.length + 1));
+        var height = 400//this.fittingHeight(Math.min(9, reward.length + 1));
         var statusHeight = this.fittingHeight(4);
         var x = (Graphics.boxWidth - width) / 2;
         var y = (Graphics.boxHeight - statusHeight - height) / 2;
         Window_Base.prototype.initialize.call(this, x, y, width, height);
-        this.refresh();
+        //this.refresh();
         this.openness = 0;
         this.open();
     };
-
-    Window_BattleResults.prototype.refresh = function() {
+/*
+    Window_Rewards.prototype.refresh = function() {
         var x = this.textPadding();
         var y = 0;
         var width = this.contents.width;
         var lineHeight = this.lineHeight();
-        var rewards = BattleManager._rewards;
-        var items = rewards.items;
+        var reward = questData.rewards;
+        var items = reward.item;
         this.contents.clear();
 
         this.resetTextColor();
@@ -437,7 +448,7 @@ DataManager._databaseFiles.push(
             y += lineHeight;
         }, this);
     };
-	
+	*/
 	///////////////////////////////
 	
 	
@@ -467,8 +478,8 @@ DataManager._databaseFiles.push(
                     break;
             }
         }
-		this._resultWindow = new Window_BattleResults();
-        this.addWindow(this._resultWindow);
+		this._resultWindow = new Window_Rewards(this.questId);
+        //this.addWindow(this._resultWindow);
     };
     
     Game_Quest.prototype.completed = function() {
