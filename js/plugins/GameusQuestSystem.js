@@ -478,7 +478,7 @@ DataManager._databaseFiles.push(
                     break;
             }
         }
-		this._resultWindow = new Window_Rewards(this.questId);
+		//this._resultWindow = new Window_Rewards(this.questId);
         //this.addWindow(this._resultWindow);
     };
     
