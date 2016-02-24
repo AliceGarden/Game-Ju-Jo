@@ -311,6 +311,7 @@ Scene_Title.prototype.createCommandWindow = function() {
     this._commandWindow = new Window_TitleCommand();
     this._commandWindow.setHandler('newGame',  this.commandNewGame.bind(this));
     this._commandWindow.setHandler('continue', this.commandContinue.bind(this));
+	this._commandWindow.setHandler('extra',  this.commandExtra.bind(this));
     this._commandWindow.setHandler('options',  this.commandOptions.bind(this));
     this.addWindow(this._commandWindow);
 };
@@ -330,6 +331,11 @@ Scene_Title.prototype.commandContinue = function() {
 Scene_Title.prototype.commandOptions = function() {
     this._commandWindow.close();
     SceneManager.push(Scene_Options);
+};
+
+Scene_Title.prototype.commandExtra = function() {
+    this._commandWindow.close();
+    SceneManager.push(Scene_Options); /////Scene_Extra
 };
 
 Scene_Title.prototype.playTitleMusic = function() {
@@ -1386,6 +1392,40 @@ Scene_Options.prototype.createOptionsWindow = function() {
     this._optionsWindow.setHandler('cancel', this.popScene.bind(this));
     this.addWindow(this._optionsWindow);
 };
+
+//-----------------------------------------------------------------------------
+// Scene_Extra
+//
+// The scene class of the options screen.
+
+function Scene_Extra() {
+    this.initialize.apply(this, arguments);
+}
+
+Scene_Extra.prototype = Object.create(Scene_MenuBase.prototype);
+Scene_Extra.prototype.constructor = Scene_Extra;
+
+Scene_Extra.prototype.initialize = function() {
+    Scene_MenuBase.prototype.initialize.call(this);
+};
+
+Scene_Extra.prototype.create = function() {
+    Scene_MenuBase.prototype.create.call(this);
+    this.createExtraWindow();
+};
+
+Scene_Extra.prototype.terminate = function() {
+    Scene_MenuBase.prototype.terminate.call(this);
+    ConfigManager.save();
+};
+
+Scene_Extra.prototype.createExtraWindow = function() {
+    this._extraWindow = new Window_PictureList();
+    this._extraWindow.setHandler('cancel', this.popScene.bind(this));
+    this.addWindow(this._extraWindow);
+};
+
+
 
 //-----------------------------------------------------------------------------
 // Scene_File

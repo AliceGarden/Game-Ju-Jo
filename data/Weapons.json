@@ -65,5 +65,5 @@ null,
 {"id":63,"animationId":0,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":0,"name":"Dague de Chintine","note":"","params":[0,0,0,0,0,0,0,0],"price":0,"wtypeId":7},
 {"id":64,"animationId":0,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":0,"name":"Lance de Lusca","note":"","params":[0,0,0,0,0,0,0,0],"price":0,"wtypeId":3},
 {"id":65,"animationId":0,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":0,"name":"Epée de ....","note":"","params":[0,0,0,0,0,0,0,0],"price":0,"wtypeId":4},
-{"id":66,"animationId":0,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0,"wtypeId":0}
+{"id":66,"animationId":7,"description":"La faux de la mort qui aspire la vie de son porteur...","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":-0.05},{"code":54,"dataId":1,"value":0}],"iconIndex":122,"name":"La grand Faux","note":"","params":[-20,0,128,0,0,0,0,0],"price":30000,"wtypeId":11}
 ]
