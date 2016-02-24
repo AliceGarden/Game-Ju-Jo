@@ -5739,7 +5739,7 @@ Window_TitleCommand.prototype.updatePlacement = function() {
 Window_TitleCommand.prototype.makeCommandList = function() {
     this.addCommand(TextManager.newGame,   'newGame');
     this.addCommand(TextManager.continue_, 'continue', this.isContinueEnabled());
-	this.addCommand('Extra',   'extra'); /////////////////////////////////////////////////////// AJOUT MENU EXTRA
+	//this.addCommand('Extra',   'extra'); /////////////////////////////////////////////////////// AJOUT MENU EXTRA
     this.addCommand(TextManager.options,   'options');
 };
 
