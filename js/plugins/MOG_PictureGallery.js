@@ -410,7 +410,7 @@ if (String(Moghunter.picturegallery_command_menu) === "true") {
 var _alias_mog_picgal_addOriginalCommands = Window_MenuCommand.prototype.addOriginalCommands;
 Window_MenuCommand.prototype.addOriginalCommands = function() {
 	_alias_mog_picgal_addOriginalCommands.call(this);
-	this.addPictureGallery();
+	//this.addPictureGallery(); /// Cette ligne ajoute automatiquement la catégorie au menu
 };
 	
 //==============================
