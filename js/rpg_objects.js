@@ -4726,6 +4726,7 @@ Game_Party.ABILITY_CANCEL_SURPRISE   = 2;
 Game_Party.ABILITY_RAISE_PREEMPTIVE  = 3;
 Game_Party.ABILITY_GOLD_DOUBLE       = 4;
 Game_Party.ABILITY_DROP_ITEM_DOUBLE  = 5;
+Game_Party.ABILITY_DROP_MAGIC_ITEM_DOUBLE  = 6;
 
 Game_Party.prototype.initialize = function() {
     Game_Unit.prototype.initialize.call(this);
