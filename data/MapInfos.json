@@ -69,10 +69,11 @@ null,
 {"id":67,"expanded":false,"name":"MAP067","order":69,"parentId":66,"scrollX":1281.6,"scrollY":1330.8},
 {"id":68,"expanded":true,"name":"Village du château","order":19,"parentId":2,"scrollX":1282,"scrollY":3826},
 {"id":69,"expanded":true,"name":"Bar étage sup","order":39,"parentId":68,"scrollX":816,"scrollY":454},
-{"id":70,"expanded":true,"name":"Village N-E","order":70,"parentId":2,"scrollX":1166,"scrollY":1014},
-{"id":71,"expanded":false,"name":"MAP071","order":71,"parentId":70,"scrollX":832,"scrollY":640},
+{"id":70,"expanded":true,"name":"Village N-E","order":70,"parentId":2,"scrollX":1165.0909090909092,"scrollY":1013.4545454545455},
+{"id":71,"expanded":false,"name":"MAP071","order":71,"parentId":70,"scrollX":1182.5454545454545,"scrollY":666.5454545454546},
 {"id":72,"expanded":false,"name":"MAP072","order":72,"parentId":71,"scrollX":832,"scrollY":640},
 {"id":73,"expanded":false,"name":"MAP073","order":73,"parentId":70,"scrollX":1182.5454545454545,"scrollY":666.5454545454546},
 {"id":74,"expanded":false,"name":"MAP074","order":74,"parentId":70,"scrollX":832,"scrollY":640},
-{"id":75,"expanded":false,"name":"MAP075","order":75,"parentId":70,"scrollX":1182.5454545454545,"scrollY":666.5454545454546}
+{"id":75,"expanded":false,"name":"MAP075","order":75,"parentId":70,"scrollX":1182.5454545454545,"scrollY":666.5454545454546},
+{"id":76,"expanded":false,"name":"MAP076","order":76,"parentId":70,"scrollX":1182.5454545454545,"scrollY":666.5454545454546}
 ]
