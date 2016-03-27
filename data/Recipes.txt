@@ -107,9 +107,10 @@
 <recipe8>
 
 <recipe9>
- result:{type:"armor", id:1, amount:1}
+ result:{type:"armor", id:52, amount:1}
  <materials>
-  {type:"item", id:11, amount:4}
+  {type:"item", id:11, amount:5}
+  {type:"item", id:10, amount:1}
  <materials>
  category:Tailor
  success:85
