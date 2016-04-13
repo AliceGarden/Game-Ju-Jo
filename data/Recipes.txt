@@ -4,7 +4,7 @@
   {type:"item", id:33, amount:3}
  <materials>
  category:Bijoux
- success:50
+ success:75
  successGain:10
  xp:35
  xpDeprac:5
@@ -16,7 +16,7 @@
   {type:"item", id:34, amount:3}
  <materials>
  category:Bijoux
- success:50
+ success:75
  successGain:10
  xp:35
  xpDeprac:5
@@ -28,7 +28,7 @@
   {type:"item", id:35, amount:3}
  <materials>
  category:Bijoux
- success:50
+ success:75
  successGain:10
  xp:35
  xpDeprac:5
@@ -40,7 +40,7 @@
   {type:"item", id:36, amount:3}
  <materials>
  category:Bijoux
- success:50
+ success:75
  successGain:10
  xp:35
  xpDeprac:5
@@ -52,7 +52,7 @@
   {type:"item", id:37, amount:3}
  <materials>
  category:Bijoux
- success:50
+ success:75
  successGain:10
  xp:35
  xpDeprac:5
@@ -64,10 +64,86 @@
   {type:"item", id:38, amount:3}
  <materials>
  category:Bijoux
- success:50
+ success:75
  successGain:10
  xp:35
  xpDeprac:5
 <recipe6>
 
+<recipe7>
+ result:{type:"armor", id:62, amount:1}
+ <materials>
+  {type:"item", id:11, amount:1}
+  {type:"item", id:42, amount:5}
+ <materials>
+ category:Bijoux
+ success:66
+ successGain:20
+ xp:50
+ xpDeprac:5
+<recipe7>
 
+<recipe8>
+ result:{type:"armor", id:63, amount:1}
+ <materials>
+  {type:"item", id:9, amount:1}
+  {type:"item", id:42, amount:5}
+ <materials>
+ category:Bijoux
+ success:66
+ successGain:20
+ xp:50
+ xpDeprac:5
+<recipe8>
+
+<recipe9>
+ result:{type:"armor", id:64, amount:1}
+ <materials>
+  {type:"item", id:10, amount:1}
+  {type:"item", id:42, amount:5}
+ <materials>
+ category:Bijoux
+ success:66
+ successGain:20
+ xp:50
+ xpDeprac:5
+<recipe9>
+
+<recipe10>
+ result:{type:"armor", id:65, amount:1}
+ <materials>
+  {type:"item", id:12, amount:1}
+  {type:"item", id:42, amount:5}
+ <materials>
+ category:Bijoux
+ success:66
+ successGain:20
+ xp:50
+ xpDeprac:5
+<recipe10>
+
+<recipe11>
+ result:{type:"armor", id:66, amount:1}
+ <materials>
+  {type:"item", id:13, amount:1}
+  {type:"item", id:42, amount:5}
+ <materials>
+ category:Bijoux
+ success:66
+ successGain:20
+ xp:50
+ xpDeprac:5
+<recipe11>
+
+<recipe12>
+ result:{type:"armor", id:67, amount:1}
+ <materials>
+  {type:"item", id:14, amount:1}
+  {type:"item", id:42, amount:5}
+ <materials>
+ category:Bijoux
+ success:66
+ successGain:20
+ xp:50
+ xpDeprac:5
+<recipe12>
