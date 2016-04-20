@@ -147,3 +147,16 @@
  xp:50
  xpDeprac:5
 <recipe12>
+
+<recipe13>
+ result:{type:"item", id:7, amount:1}
+ <materials>
+  {type:"item", id:31, amount:20}
+ <materials>
+ category:Alchimie
+ known:false
+ success:95
+ successGain:15
+ xp:50
+ xpDeprac:5
+<recipe13>
