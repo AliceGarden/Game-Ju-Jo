@@ -96,6 +96,7 @@ null,
 {"id":94,"expanded":false,"name":"Tente","order":74,"parentId":67,"scrollX":832,"scrollY":640},
 {"id":95,"expanded":true,"name":"QG Héros Maestria","order":42,"parentId":68,"scrollX":1941.6,"scrollY":1065.6},
 {"id":96,"expanded":false,"name":"QG Héros Maestria E-1","order":43,"parentId":95,"scrollX":801,"scrollY":612},
-{"id":97,"expanded":false,"name":"Ville N-O","order":98,"parentId":2,"scrollX":1616,"scrollY":1108},
-{"id":98,"expanded":false,"name":"MAP098","order":76,"parentId":66,"scrollX":832,"scrollY":640}
+{"id":97,"expanded":false,"name":"Ville N-O","order":98,"parentId":2,"scrollX":1602,"scrollY":1108},
+{"id":98,"expanded":false,"name":"MAP098","order":76,"parentId":66,"scrollX":832,"scrollY":640},
+{"id":99,"expanded":false,"name":"MAP099","order":99,"parentId":2,"scrollX":801,"scrollY":996}
 ]
