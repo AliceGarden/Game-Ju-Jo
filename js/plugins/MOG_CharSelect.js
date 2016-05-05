@@ -191,8 +191,14 @@ var _alias_mog_charSelect_pluginCommand = Game_Interpreter.prototype.pluginComma
 Game_Interpreter.prototype.pluginCommand = function(command, args) {
 	_alias_mog_charSelect_pluginCommand.call(this,command, args)
 	if (command === "character_select")  {
-		SceneManager.push(Scene_CharSelect)
-	    this.wait(10);
+		if(args[0] === 'call') {
+			SceneManager.push(Scene_CharSelect)
+			//this.wait(10);
+		}
+		if(args[0] === 'add') {
+			Moghunter.skipActorIDs += (',' + args[1]);
+		}
+		
 	};
 	return true;
 };
@@ -248,10 +254,10 @@ Scene_CharSelect.prototype.loadFiles = function() {
 	var membersTemp = $gameParty.members();	
 	$gameParty._actors = [];
 	for (var i = 0; i < membersTemp.length; i++) {
-	     var enable = true;
+	     var enable = false;
 		 var actor = membersTemp[i];
 		 for (var s = 0; s < this._skipID.length; s++) {
-            if (actor._actorId === this._skipID[s]) {enable = false};
+            if (actor._actorId === this._skipID[s]) {enable = true};
 		 };	
 		 if (enable) {
 			 this._actors.push(actor)
@@ -260,7 +266,7 @@ Scene_CharSelect.prototype.loadFiles = function() {
 			 this._faceBitmaps_S.push(ImageManager.loadACharSelectFacesS(fileName));
 			 this._pictureBitmaps.push(ImageManager.loadPicture(fileName));
 		 };	
-	};
+	};	
 	this._maxPartySize = Math.min(Math.max(Moghunter.charSel_initPartySize,1),this._actors.length);
 };
   
