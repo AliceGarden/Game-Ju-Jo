@@ -198,6 +198,15 @@ Game_Interpreter.prototype.pluginCommand = function(command, args) {
 		if(args[0] === 'add') {
 			Moghunter.skipActorIDs += (',' + args[1]);
 		}
+		if(args[0] === 'remove') {
+			var s = Moghunter.skipActorIDs.split(',');
+			var listcharact = "";
+			for (var i = 0; i < s.length; i++) {
+				if ( s[i] != args[1])
+					{listcharact += s[i] +',';}
+			};
+			Moghunter.skipActorIDs = listcharact;
+		}
 		
 	};
 	return true;
@@ -222,6 +231,7 @@ Scene_CharSelect.prototype.initialize = function() {
 	this._ActorIndex = -1;
 	this._party = [];
 	this._partyIndex = 0;
+	this._indexHero = 8;
 	this._partySel = [];
 	this._actors = [];
 	this._pi = 2.0 * Math.PI;
@@ -230,6 +240,7 @@ Scene_CharSelect.prototype.initialize = function() {
 	this._phase = [0,0];
 	this.loadFiles();
     this.createSprites();
+	this.addCharacterHero(this._indexHero);
 };
 
 //==============================
@@ -257,7 +268,10 @@ Scene_CharSelect.prototype.loadFiles = function() {
 	     var enable = false;
 		 var actor = membersTemp[i];
 		 for (var s = 0; s < this._skipID.length; s++) {
-            if (actor._actorId === this._skipID[s]) {enable = true};
+            if (actor._actorId === this._skipID[s]) {
+				enable = true
+				this._indexHero = this._actors.length;
+			};
 		 };	
 		 if (enable) {
 			 this._actors.push(actor)
@@ -440,13 +454,25 @@ Scene_CharSelect.prototype.selectCharacter = function(next) {
 };
 
 //==============================
-// * selectCharacter
+// * addCharacter
 //==============================
 Scene_CharSelect.prototype.addCharacter = function(next) {
     SoundManager.playOk();
 	this._partySel.push(this._index);
 	this.refreshFaceOpacity();
     this.refreshMembers(this._partyIndex,this._index);
+	this._partyIndex++;
+	if (this._partyIndex >= this._maxPartySize) {this._phase[0] = 2};
+};
+
+//==============================
+// * addCharacterSpecialHero
+//==============================
+Scene_CharSelect.prototype.addCharacterHero = function(index) {
+	this
+	this._partySel.push(index);
+	this.refreshFaceOpacity();
+    this.refreshMembers(this._partyIndex,index);
 	this._partyIndex++;
 	if (this._partyIndex >= this._maxPartySize) {this._phase[0] = 2};
 };
