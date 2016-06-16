@@ -100,5 +100,7 @@ null,
 {"id":98,"expanded":false,"name":"MAP098","order":76,"parentId":66,"scrollX":832,"scrollY":640},
 {"id":99,"expanded":false,"name":"MAP099","order":99,"parentId":2,"scrollX":1064,"scrollY":611},
 {"id":100,"expanded":false,"name":"Village Forêt centre","order":100,"parentId":2,"scrollX":1080,"scrollY":611},
-{"id":101,"expanded":true,"name":"Terre des Cavendor","order":101,"parentId":2,"scrollX":2128,"scrollY":1322}
+{"id":101,"expanded":true,"name":"Terre des Cavendor","order":101,"parentId":2,"scrollX":2150,"scrollY":1920},
+{"id":102,"expanded":false,"name":"Maison gauche","order":102,"parentId":101,"scrollX":832,"scrollY":640},
+{"id":103,"expanded":false,"name":"Maison centrale","order":103,"parentId":101,"scrollX":832,"scrollY":640}
 ]
