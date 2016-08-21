@@ -169,7 +169,7 @@
  category:Couture
  success:95
  successGain:20
- xp:50
+ xp:20
  xpDeprac:5
 <recipe14>
 
@@ -225,5 +225,87 @@
  successGain:5
  xp:80
  xpDeprac:5
- lvl:5
+ craftLevel:5
 <recipe18>
+
+<recipe19>
+ result:{type:"item", id:122, amount:1}
+ <materials>
+  {type:"item", id:87, amount:2}
+  {type:"item", id:60, amount:1}
+ <materials>
+ category:Alchimie
+ success:80
+ successGain:5
+ xp:80
+ xpDeprac:5
+ craftLevel:8
+<recipe19>
+
+<recipe20>
+ result:{type:"item", id:123, amount:1}
+ <materials>
+  {type:"item", id:86, amount:3}
+  {type:"item", id:124, amount:1}
+ <materials>
+ category:Alchimie
+ success:80
+ successGain:5
+ xp:80
+ xpDeprac:5
+ craftLevel:10
+<recipe20>
+
+<recipe21>
+ result:{type:"item", id:125, amount:1}
+ <materials>
+  {type:"item", id:98, amount:5}
+  {type:"item", id:117, amount:1}
+  {type:"item", id:62, amount:3}
+ <materials>
+ category:Cuisine
+ success:80
+ successGain:5
+ xp:80
+ xpDeprac:5
+ craftLevel:3
+<recipe21>
+
+<recipe22>
+ result:{type:"item", id:129, amount:1}
+ <materials>
+  {type:"item", id:128, amount:1}
+  {type:"item", id:115, amount:1}
+  {type:"item", id:103, amount:2}
+ <materials>
+ category:Cuisine
+ success:80
+ successGain:5
+ xp:80
+ xpDeprac:5
+ craftLevel:3
+<recipe22>
+
+<recipe23>
+ result:{type:"item", id:131, amount:3}
+ <materials>
+  {type:"item", id:65, amount:1}
+ <materials>
+ category:Couture
+ success:80
+ successGain:5
+ xp:7
+ xpDeprac:5
+<recipe23>
+
+<recipe24>
+ result:{type:"item", id:133, amount:1}
+ <materials>
+  {type:"item", id:132, amount:2}
+ <materials>
+ category:Couture
+ success:80
+ successGain:5
+ xp:20
+ xpDeprac:5
+<recipe24>
