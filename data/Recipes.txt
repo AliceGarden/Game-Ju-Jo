@@ -172,3 +172,43 @@
  xp:50
  xpDeprac:5
 <recipe14>
+
+<recipe15>
+ result:{type:"item", id:94, amount:1}
+ <materials>
+  {type:"item", id:91, amount:1}
+  {type:"item", id:18, amount:2}
+ <materials>
+ category:Cuisine
+ success:80
+ successGain:5
+ xp:80
+ xpDeprac:5
+<recipe15>
+
+<recipe16>
+ result:{type:"item", id:95, amount:1}
+ <materials>
+  {type:"item", id:91, amount:1}
+  {type:"item", id:86, amount:2}
+ <materials>
+ category:Cuisine
+ success:80
+ successGain:5
+ xp:80
+ xpDeprac:5
+<recipe16>
+
+<recipe17>
+ result:{type:"item", id:106, amount:1}
+ <materials>
+  {type:"item", id:104, amount:1}
+  {type:"item", id:116, amount:2}
+  {type:"item", id:124, amount:2}
+ <materials>
+ category:Cuisine
+ success:80
+ successGain:5
+ xp:80
+ xpDeprac:5
+<recipe17>
