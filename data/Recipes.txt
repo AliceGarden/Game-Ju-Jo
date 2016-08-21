@@ -160,3 +160,15 @@
  xp:50
  xpDeprac:5
 <recipe13>
+
+<recipe14>
+ result:{type:"item", id:65, amount:1}
+ <materials>
+  {type:"item", id:55, amount:2}
+ <materials>
+ category:Couture
+ success:95
+ successGain:20
+ xp:50
+ xpDeprac:5
+<recipe14>
