@@ -309,3 +309,85 @@
  xp:20
  xpDeprac:5
 <recipe24>
+
+<recipe25>
+ result:{type:"armor", id:1, amount:1}
+ <materials>
+  {type:"item", id:133, amount:1}
+  {type:"item", id:134, amount:1}
+ <materials>
+ category:Couture
+ success:90
+ successGain:5
+ xp:25
+ xpDeprac:5
+<recipe25>
+
+<recipe26>
+ result:{type:"armor", id:2, amount:1}
+ <materials>
+  {type:"item", id:65, amount:1}
+  {type:"item", id:134, amount:1}
+ <materials>
+ category:Couture
+ success:80
+ successGain:5
+ xp:25
+ xpDeprac:5
+ craftLevel:3
+<recipe26>
+
+<recipe27>
+ result:{type:"armor", id:4, amount:1}
+ <materials>
+  {type:"item", id:65, amount:3}
+  {type:"item", id:134, amount:1}
+ <materials>
+ category:Couture
+ success:80
+ successGain:5
+ xp:30
+ xpDeprac:5
+ craftLevel:2
+<recipe27>
+
+<recipe28>
+ result:{type:"armor", id:5, amount:1}
+ <materials>
+  {type:"item", id:65, amount:3}
+  {type:"item", id:39, amount:3}
+  {type:"item", id:134, amount:2}
+ <materials>
+ category:Couture
+ success:80
+ successGain:5
+ xp:40
+ xpDeprac:5
+ craftLevel:3
+<recipe28>
+
+<recipe29>
+ result:{type:"armor", id:6, amount:1}
+ <materials>
+  {type:"item", id:133, amount:1}
+  {type:"item", id:134, amount:1}
+ <materials>
+ category:Couture
+ success:80
+ successGain:5
+ xp:15
+ xpDeprac:5
+<recipe29>
+
+<recipe30>
+ result:{type:"armor", id:7, amount:1}
+ <materials>
+  {type:"item", id:65, amount:1}
+  {type:"item", id:134, amount:1}
+ <materials>
+ category:Couture
+ success:80
+ successGain:5
+ xp:15
+ xpDeprac:5
+<recipe30>
