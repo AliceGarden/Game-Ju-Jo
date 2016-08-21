@@ -212,3 +212,18 @@
  xp:80
  xpDeprac:5
 <recipe17>
+
+<recipe18>
+ result:{type:"item", id:120, amount:1}
+ <materials>
+  {type:"item", id:119, amount:3}
+  {type:"item", id:121, amount:2}
+  {type:"item", id:39, amount:1}
+ <materials>
+ category:Alchimie
+ success:80
+ successGain:5
+ xp:80
+ xpDeprac:5
+ lvl:5
+<recipe18>
