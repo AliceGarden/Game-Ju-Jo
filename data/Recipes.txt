@@ -405,3 +405,17 @@
  xp:35
  xpDeprac:5
 <recipe31>
+
+<recipe32>
+ result:{type:"armor", id:69, amount:1}
+ <materials>
+  {type:"item", id:121, amount:1}
+  {type:"item", id:60, amount:2}
+  {type:"item", id:61, amount:1}
+ <materials>
+ category:Bijoux
+ success:80
+ successGain:5
+ xp:35
+ xpDeprac:5
+<recipe32>
