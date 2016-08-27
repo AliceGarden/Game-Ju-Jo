@@ -100,10 +100,11 @@ null,
 {"id":98,"expanded":false,"name":"MAP098","order":79,"parentId":66,"scrollX":832,"scrollY":640},
 {"id":99,"expanded":false,"name":"MAP099","order":102,"parentId":2,"scrollX":1064,"scrollY":611},
 {"id":100,"expanded":false,"name":"Village Forêt centre","order":103,"parentId":2,"scrollX":929.1428571428571,"scrollY":523.7142857142857},
-{"id":101,"expanded":true,"name":"Terre des Cavendor","order":104,"parentId":2,"scrollX":1747.6363636363637,"scrollY":1575.2727272727273},
+{"id":101,"expanded":true,"name":"Terre des Cavendor","order":104,"parentId":2,"scrollX":1748,"scrollY":1575},
 {"id":102,"expanded":false,"name":"Maison gauche","order":105,"parentId":101,"scrollX":832,"scrollY":640},
 {"id":103,"expanded":false,"name":"Maison centrale","order":106,"parentId":101,"scrollX":832,"scrollY":640},
 {"id":104,"expanded":true,"name":"Caserne","order":44,"parentId":68,"scrollX":801,"scrollY":773.5},
 {"id":105,"expanded":true,"name":"Caserne E-1","order":45,"parentId":104,"scrollX":954,"scrollY":666.5},
-{"id":106,"expanded":false,"name":"Caserne E-2","order":46,"parentId":105,"scrollX":816,"scrollY":666.5}
+{"id":106,"expanded":false,"name":"Caserne E-2","order":46,"parentId":105,"scrollX":816,"scrollY":666.5},
+{"id":107,"expanded":false,"name":"MAP107","order":107,"parentId":101,"scrollX":1084,"scrollY":611}
 ]
