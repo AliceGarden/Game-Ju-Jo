@@ -109,5 +109,6 @@ null,
 {"id":107,"expanded":false,"name":"MAP107","order":107,"parentId":101,"scrollX":919,"scrollY":436},
 {"id":108,"expanded":true,"name":"MAP108","order":108,"parentId":2,"scrollX":809,"scrollY":444},
 {"id":109,"expanded":false,"name":"MAP109","order":109,"parentId":108,"scrollX":1080,"scrollY":611},
-{"id":110,"expanded":false,"name":"Grotte de Meredith","order":110,"parentId":2,"scrollX":720,"scrollY":407.3333333333333}
+{"id":110,"expanded":true,"name":"Grotte de Meredith","order":110,"parentId":2,"scrollX":810,"scrollY":458.25},
+{"id":111,"expanded":false,"name":"G. Meredith, le trou dans la mur","order":111,"parentId":110,"scrollX":810,"scrollY":458.25}
 ]
